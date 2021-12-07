@@ -13,6 +13,8 @@
 		3579F90E275F2F0A00795EBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3579F90C275F2F0A00795EBE /* Main.storyboard */; };
 		3579F910275F2F0C00795EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3579F90F275F2F0C00795EBE /* Assets.xcassets */; };
 		3579F913275F2F0C00795EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3579F911275F2F0C00795EBE /* LaunchScreen.storyboard */; };
+		3579F91D275F2FCA00795EBE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3579F91C275F2FCA00795EBE /* WebKit.framework */; };
+		3579F920275F350D00795EBE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3579F91F275F350D00795EBE /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3579F90F275F2F0C00795EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3579F912275F2F0C00795EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3579F914275F2F0C00795EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3579F91C275F2FCA00795EBE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		3579F91F275F350D00795EBE /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3579F91D275F2FCA00795EBE /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				3579F905275F2F0A00795EBE /* HybridTest */,
 				3579F904275F2F0A00795EBE /* Products */,
+				3579F91B275F2FCA00795EBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +65,21 @@
 				3579F906275F2F0A00795EBE /* AppDelegate.swift */,
 				3579F908275F2F0A00795EBE /* SceneDelegate.swift */,
 				3579F90A275F2F0A00795EBE /* ViewController.swift */,
+				3579F91F275F350D00795EBE /* Reachability.swift */,
 				3579F90C275F2F0A00795EBE /* Main.storyboard */,
 				3579F90F275F2F0C00795EBE /* Assets.xcassets */,
 				3579F911275F2F0C00795EBE /* LaunchScreen.storyboard */,
 				3579F914275F2F0C00795EBE /* Info.plist */,
 			);
 			path = HybridTest;
+			sourceTree = "<group>";
+		};
+		3579F91B275F2FCA00795EBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3579F91C275F2FCA00795EBE /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +154,7 @@
 			files = (
 				3579F90B275F2F0A00795EBE /* ViewController.swift in Sources */,
 				3579F907275F2F0A00795EBE /* AppDelegate.swift in Sources */,
+				3579F920275F350D00795EBE /* Reachability.swift in Sources */,
 				3579F909275F2F0A00795EBE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

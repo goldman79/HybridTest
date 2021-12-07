@@ -20,6 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>파일첨부 직접 촬영을 위해 ${PRODUCT_NAME} 앱이 카메라에 접근합니다.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>위치정보는 현재 위치에서 사무실 검색 시 사용됩니다.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>파일첨부 직접 촬영을 위해 ${PRODUCT_NAME} 앱이 마이크에 접근합니다.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>파일첨부를 위해 ${PRODUCT_NAME} 앱이 앨범에 접근합니다.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
