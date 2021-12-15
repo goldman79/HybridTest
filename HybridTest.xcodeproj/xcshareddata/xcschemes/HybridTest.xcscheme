@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1240"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;&#10;echo &quot;Run Scripts Running...&quot;&#10;&#10;Build=&quot;${PROJECT_DIR}/LiivMate/Libraries/TouchAD/Build&quot;&#10;Debug=&quot;${PROJECT_DIR}/LiivMate/Libraries/TouchAD/Debug&quot;&#10;Release=&quot;${PROJECT_DIR}/LiivMate/Libraries/TouchAD/Release&quot;&#10;&#10;rm -r &quot;${Build}/&quot;&#10;mkdir &quot;${Build}&quot;&#10;&#10;if [[ $CONFIGURATION == &quot;Release&quot; ]]; then&#10;    cp -r &quot;${Release}/&quot; &quot;${Build}/&quot;&#10;    echo &quot;Run Scripts [Release]&quot;&#10;else&#10;    cp -r &quot;${Debug}/&quot; &quot;${Build}/&quot;&#10;    echo &quot;Run Scripts [Debug]&quot; &#10;fi&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3579F902275F2F0A00795EBE"
+               BuildableName = "HybridTest.app"
+               BlueprintName = "HybridTest"
+               ReferencedContainer = "container:HybridTest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3579F902275F2F0A00795EBE"
+            BuildableName = "HybridTest.app"
+            BlueprintName = "HybridTest"
+            ReferencedContainer = "container:HybridTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3579F902275F2F0A00795EBE"
+            BuildableName = "HybridTest.app"
+            BlueprintName = "HybridTest"
+            ReferencedContainer = "container:HybridTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

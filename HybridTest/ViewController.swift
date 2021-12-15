@@ -142,3 +142,26 @@ extension ViewController {
         }
     }
 }
+
+
+/*
+
+CATransition *transition = [CATransition animation];
+transition.duration = 0.3;
+transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+transition.type = kCATransitionMoveIn;
+transition.subtype = kCATransitionFromTop;
+[APP_MAIN_VC.topViewController.navigationController.view.layer addAnimation:transition forKey:kCATransition];
+[APP_MAIN_VC.topViewController.navigationController pushViewController:popUp animated:NO];
+
+
+CATransition *transition = [CATransition animation];
+transition.duration = 0.3;
+transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+transition.type = kCATransitionReveal;
+transition.subtype = kCATransitionFromBottom;
+    
+[vc.navigationController.view.layer addAnimation:transition forKey:kCATransition];
+[vc.navigationController popViewControllerAnimated:NO];
+
+ */
